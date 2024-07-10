@@ -1,0 +1,88 @@
+* {
+    font-family: Montserrat;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 70%;
+    margin: auto;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h1, h2, h3 {
+    margin-top: 1.5em;
+}
+
+p {
+    color: #5E5E5E;
+}
+
+td, th, table {
+    border: 1px solid black;
+}
+
+img {
+    margin: auto;
+}
+
+figcaption {
+    font-style: italic;
+}
+
+figure {
+    float: right;
+}
+
+a:link, a:visited {
+    color: #1d1d1d;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #000000;
+    text-decoration: bold;
+}
+
+@keyframes slide-right {
+    from {
+        transform: translateX(0px);
+    }
+
+    to {
+        transform: translateX(10px);
+    }
+}
+
+@keyframes slide-left {
+    from {
+        transform: translateX(10px);
+    }
+
+    to {
+        transform: translateX(0px);
+    }
+}
+
+.contents {
+    color: #000000;
+}
+
+.contents:hover {
+    animation-duration: 0.5s;
+    animation-name: slide-right;
+    animation-fill-mode: forwards;
+    font-weight: 600;
+}
+
+.contents:not(:hover) {
+    animation-duration: 0.5s;
+    animation-name: slide-left;
+    animation-fill-mode: forwards;
+    font-weight: 100;
+}
